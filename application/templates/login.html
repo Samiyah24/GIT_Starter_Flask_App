@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+<section>
+   <h3>Please log in to continue</h3>
+   <form action="{{ url_for('login') }}" method="POST">
+      <p><label for="username">Username: </label></p>
+      <p><input type="text" id="username" name="username" required /></p>
+      <p><input type="password" id="password" name="password" required /></p>
+      <p><input type="submit" value="Login" /></p>
+   </form>
+</section>
+{% endblock %}
+

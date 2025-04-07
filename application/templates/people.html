@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+<section>
+    <h2>List of People and Their Favourite Colours</h2>
+    <table class="people-table">
+        <thead>
+            <tr>
+                <th>Person ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favourite Flower</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for person in people %}
+            <tr>
+                <td>{{ person.PersonID }}</td>
+                <td>{{ person.Firstname }}</td>
+                <td>{{ person.Lastname }}</td>
+                <td>{{ person.FlowerName }}</td>  <!-- Display ColourName here -->
+                <td><a href="{{ url_for('update_person_details', person_id=person.PersonID) }}">Edit</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}
+

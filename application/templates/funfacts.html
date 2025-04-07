@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block title %}Hobbies{% endblock %}
+
+{% block body_content %}
+    <h1>Fun Facts about the Founders!</h1>
+    <p>We love to partake in a range of different activities in our free time!</p>
+    <h3>Some of our hobbies include:</h3>
+
+    <!-- Carousel with images -->
+    <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='images/reading.jpg') }}" class="d-block w-100" alt="Reading">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/baking.jpg') }}" class="d-block w-100" alt="Baking">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/sleeping.jpg') }}" class="d-block w-100" alt="Sleeping">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h4>Our Birthdays</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Khrisha</th>
+                <th>Sami</th>
+                <th>Serena</th>
+                <th>Jhaap</th>
+                <th>Aiman</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>November</td>
+                <td>June</td>
+                <td>August</td>
+                <td>March</td>
+                <td>June</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Some of Our Favourite Movies</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Movie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aiman</td>
+                <td>Harry Potter</td>
+            </tr>
+            <tr>
+                <td>Khrisha</td>
+                <td>Crazy Stupid Love</td>
+            </tr>
+            <tr>
+                <td>Sami</td>
+                <td>The Notebook</td>
+            </tr>
+            <tr>
+                <td>Serena</td>
+                <td>Deadpool</td>
+            </tr>
+            <tr>
+                <td>Jhaap</td>
+                <td>The Avengers</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-primary" onclick="window.history.back();">Back</button>
+{% endblock %}

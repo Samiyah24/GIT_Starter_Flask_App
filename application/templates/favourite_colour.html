@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<section>
+   <form action="" method="POST">
+      <p><label for="first_name">First Name: </label></p>
+      <p><input type="text" id="first_name" name="first_name" required/></p>
+
+      <p><label for="last_name">Last Name: </label></p>
+      <p><input type="text" id="last_name" name="last_name" required/></p>
+
+      <p><label for="fav_color">Favorite Colour: </label></p>
+      <p><input type="color" id="fav_color" name="fav_color" required/></p>
+
+      <p><input type="submit" value="Submit" /></p>
+   </form>
+</section>
+{% endblock %}
+

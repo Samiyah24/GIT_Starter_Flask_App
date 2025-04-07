@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block body_content %}
+<header class="text-center p-5 bg-dark text-white">
+        <h1>Welcome To Our Website</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" width="100" alt="Flask logo">
+        <p>This is a demo application written in Python with the Flask micro web framework.</p>
+        <p>It uses Jinja templates and Bootstrap 5.</p>
+        <p> Have a look at our beautiful application!</p>
+</header>
+<div class="p-5 rounded bg-light text-center">
+    <h2 class="text-primary">Welcome to Our Flower Shop</h2>
+    <p>Hello <strong>{{ name }}</strong></p>
+    <p>Welcome to our group, <strong>{{ group }}</strong></p>
+</div>
+
+{% endblock %}

@@ -1,3 +1,122 @@
 body {
-    background-color: linen;
+    background-color: #3F88C5;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+h1, h2 {
+    color: #800080;
+}
+
+section {
+    margin-top: 20px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 65%;
+    align-items: center;display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+            border: 1px solid black;
+            padding: 8px;
+
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+table.people-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+table.people-table th, table.people-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table.people-table th {
+    background-color: #f4f4f4;
+}
+
+table.people-table td {
+    background-color: #fff;
+}
+
+table.people-table td[style] {
+    height: 30px;
+    width: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: black;
+    margin-top: 40px;
+}
+/*  dropdown */
+#colourid {
+    width: 20px;
+    height: 40px;
+    font-size: 16px;
+}
+
